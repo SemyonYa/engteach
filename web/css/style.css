@@ -1,0 +1,156 @@
+* {
+    --color-primary: rgb(29, 78, 137);
+    --color-primary-light: rgb(182, 202, 218);
+    --color-primary-dark: rgb(29, 78, 137);
+
+    --color-secondary: rgb(245, 184, 149);
+    --color-secondary-light: rgb(244, 219, 179);
+
+    --color-success: rgb(37, 89, 88);
+    --color-danger: rgb(119, 32, 47);
+    --color-grey: rgb(122, 131, 135);
+}
+
+.ok-btn {
+    padding: 3px 20px;
+    border-radius: 4px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    transition: .2s;
+    cursor: pointer;
+    min-width: 100px;
+    text-align: center;
+    border: solid 1px var(--color-secondary);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25);
+}
+
+.ok-btn:hover {
+    color: var(--color-secondary-light);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+* IMAGE MANAGER
+*/
+.images {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    margin: 3px 3px 0 0;
+    background-size: cover;
+    background-position: center center;
+}
+
+.image-chose-btn {
+    font-size: 16px;
+    color: darkcyan;
+    cursor: pointer;
+}
+
+.remove-image {
+    color: darkred;
+    float: right;
+}
+
+
+#EngModal .close {
+    color: darkred;
+    opacity: 1;
+}
+
+#EngModal .modal-dialog {
+    height: calc(100vh - 60px);
+}
+
+#EngModal .modal-content {
+    height: 100%;
+}
+
+#EngModal .modal-body {
+    height: calc(100% - 60px);
+}
+
+@media (min-width: 768px) {
+    #EngModal .modal-dialog {
+        width: 700px;
+        height: calc(100vh - 60px);
+        margin: 30px auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    #EngModal .modal-dialog {
+        width: 900px;
+        margin: 30px auto;
+    }
+}
+
+.modal-images {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.modal-image {
+    width: 150px;
+    height: 150px;
+    margin: 3px 3px 0 0;
+    background-size: cover;
+    background-position: center center;
+}
+
+.ostro-image-manager-btn {
+    font-size: 32px;
+    color: darkcyan;
+}
+
+.img-preview {
+    width: 100px;
+    height: auto;
+}
+.galery {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.galery-item-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 3px;
+}
+.galery-item {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    margin: 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25);
+    padding: 5px;
+}
+
+.galery-item input[type=checkbox] {
+    zoom: 2;
+    margin: 0;
+}

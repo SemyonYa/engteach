@@ -1,0 +1,106 @@
+* {
+    --color-primary: rgb(29, 78, 137);
+    --color-primary-light: rgb(182, 202, 218);
+    --color-primary-dark: rgb(19, 60, 110);
+
+    --color-secondary: rgb(245, 184, 149);
+    --color-secondary-light: rgb(244, 219, 179);
+
+    --color-success: rgb(37, 89, 88);
+    --color-danger: rgb(119, 32, 47);
+    --color-grey: rgb(122, 131, 135);
+    --color-lightgrey: rgb(240, 240, 240);
+    --color-back-rgb: 253, 253, 253;
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+}
+
+body {
+    overflow-y: scroll;
+    background-color: rgb(var(--color-back-rgb));
+}
+
+a {
+    color: var(--color-primary);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--color-primary-dark);
+}
+
+.front-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .15);
+    background-color: rgba(var(--color-back-rgb), .9);
+}
+
+.front-bread {
+    width: 100%;
+}
+
+.front-content {
+    width: 100%;
+    /* min-height: calc(100vh - 200px); */
+    padding: 70px 10px 100px;
+}
+
+/* .front-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+} */
+
+.front-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(var(--color-back-rgb), .9);
+    box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, .15);
+}
+
+.front-menu-item {
+    width: 25vw;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px var(--color-primary-light);
+    transition: .3s;
+}
+
+.front-menu-item:hover {
+    border-color: var(--color-primary-dark);
+}
+
+.front-menu-item-active {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+
+.front-menu-item span.glyphicon {
+    font-size: 24px;
+}
+
+.front-menu-item span:not(.glyphicon) {
+    font-size: 16px;
+    padding: 9px 20px 5px;
+}
